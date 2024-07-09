@@ -22,10 +22,5 @@ db
     console.log('Error on connecting the DB: ', err)
   })
 
-// routes
-app.get('/', (req, res) => {
-  res.send('hello, world!')
-})
-
 // jobs routes
 app.use('/jobs', require('./routes/jobs'))
